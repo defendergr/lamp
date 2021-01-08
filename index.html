@@ -5,12 +5,17 @@
   <meta name="viewport" content="width=device-width">
   <title>Lamp</title>
   <script>
-	
+	function lighton(){
+	document.querySelector("#mylamp").src="bulbon.gif";
+	}
+	function lightoff(){
+	document.querySelector("#mylamp").src="bulboff.gif";
+	}
   </script>
 </head>
 <body>
 
-<img src="images\bulboff.gif" id="mylamp" onmousedown="lighton()" onmouseup="lightoff()">
+<img src="bulboff.gif" id="mylamp" onmousedown="lighton()" onmouseup="lightoff()">
 
 </body>
 </html>
